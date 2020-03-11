@@ -1,0 +1,48 @@
+/*
+    1. Etiquetas
+*/
+
+body {
+    /* Propiedad: valor */
+    background: #4d4d4d;
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    background: rgb(199, 195, 195);
+    width: 100%;
+}
+
+header h1 {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
+h1, h2, p {
+    color: white;
+}
+
+
+header nav ul li {
+    list-style: none;
+}
+
+/*
+    2. Ids
+*/
+/* cada que ocupemos un hash (ID), es buena practica ligarlo al componente inmediato */
+section#galeriaUno {
+    background-color: green;
+}
+
+section#galeriaDos {
+    background-color: hotpink;
+}
+
+/*
+    3. Clases
+*/
+
+.fotos{
+   width: 50%; 
+}
