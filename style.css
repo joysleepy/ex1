@@ -1,22 +1,65 @@
 /*
+    0. Normalizando
+*/
+
+* {
+    margin: 0;
+} 
+
+
+/*
     1. Etiquetas
 */
 
 body {
     /* Propiedad: valor */
     background: #4d4d4d;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Helvetica';
 }
+
 header {
-    background: rgb(199, 195, 195);
+    background:#ff3333;
     width: 100%;
 }
 
-header h1 {
-    color: black;
-    font-size: 18px;
-    text-align: center;
+header figure{
+    display: inline-block;
+    width: 30%;
+    margin-right: 15%;
+    background: yellow;
 }
+
+header nav{
+    display: inline-block;
+    background-color: aqua; 
+}
+
+header section{
+    display: inline-block;
+    background: blueviolet;
+    text-align: right;
+}
+
+header figure h1{
+    font-size: 2em;
+    text-align: center;
+    color:white;
+    padding: 10px;
+}
+
+header section input{
+    height: 20px;
+    width: 45%;
+    border: 0;
+}
+
+header section button{
+    height: 24px;
+    background: #66adec;
+    color: white;
+    border: none;
+}
+
 
 h1, h2, p {
     color: white;
@@ -33,16 +76,83 @@ header nav ul li {
 /* cada que ocupemos un hash (ID), es buena practica ligarlo al componente inmediato */
 section#galeriaUno {
     background-color: green;
+    width: 100%;
 }
 
-section#galeriaDos {
-    background-color: hotpink;
+section#galeriaUno figure{
+    width: 30%;
+    display: inline-block;
+}
+
+section#galeriaUno figure img{
+    width: 100%;
 }
 
 /*
     3. Clases
 */
+ section.mainBlock{
+    display: block;
+    background-color: wheat;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: justify;
+} 
 
 .fotos{
    width: 50%; 
 }
+
+/* Media Queries */
+@media screen and (min-width: 0px) and (max-width: 576px){
+    header figure{
+        width: 30%;
+        background: brown;
+    }
+    header figure h1{
+        font-size: 1em;
+    }
+    section#galeriaUno figure{
+        width: 100%;
+        display: inline-block;
+    }    
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    header figure{
+        width: 30%;
+        background: mediumseagreen;
+    }
+    header figure h1{
+        font-size: 1.2em;
+    }
+    section#galeriaUno figure{
+        width: 45%;
+        display: inline-block;
+    }     
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    section#galeriaUno figure{
+        width: 45%;
+        margin-right: 5%;
+        display: inline-block;
+    }    
+}
+
+@media screen and (min-width: 992px) {
+    section#galeriaUno figure{
+        width: 30%;
+        display: inline-block;
+    }    
+}
+
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 .75rem;
+  }
