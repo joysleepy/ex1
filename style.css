@@ -34,6 +34,27 @@ header nav{
     background-color:#cf142b !important; 
 }
 
+main section img{
+    width: 100%;
+    background-size: cover;
+}
+
+main section h2{
+    width: 16%;
+    background: #cf142b;
+    color: white;
+    margin-left: 42%;
+    margin-right: 42%;
+}
+
+main section div{
+    text-align: center;
+}
+
+main section div p{
+    color: black;
+}
+
 footer{
     background-color: #00247d;
 }
@@ -45,6 +66,7 @@ footer{
 section#galeriaUno {
     background-color: #E8E8E8;
     width: 100%;
+    padding-top: 1em;
 }
 
 .column{
