@@ -13,13 +13,13 @@
 
 body {
     /* Propiedad: valor */
-    background: #4d4d4d;
-    font-family: 'Helvetica';
 }
 
 header {
-    background:#ff3333;
+    background: white;
     width: 100%;
+    padding-top:10px;
+    padding-bottom: 10px;
 }
 
 header figure{
@@ -31,8 +31,48 @@ header figure{
 
 header nav{
     display: inline-block;
-    background-color: aqua; 
+    background-color:#cf142b !important; 
 }
+
+footer{
+    background-color: #00247d;
+}
+
+/*
+    2. Ids
+*/
+/* cada que ocupemos un hash (ID), es buena practica ligarlo al componente inmediato */
+section#galeriaUno {
+    background-color: #E8E8E8;
+    width: 100%;
+}
+
+.column{
+    margin-bottom: 10px;
+}
+
+div.inner{
+    padding: 10px;
+    border: solid 1px #cccccc;
+    background: white;
+}
+
+div.inner figcaption{
+    font-style: italic;
+}
+
+.column img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
 
 header section{
     display: inline-block;
@@ -70,14 +110,7 @@ header nav ul li {
     list-style: none;
 }
 
-/*
-    2. Ids
-*/
-/* cada que ocupemos un hash (ID), es buena practica ligarlo al componente inmediato */
-section#galeriaUno {
-    background-color: green;
-    width: 100%;
-}
+
 
 section#galeriaUno figure{
     width: 30%;

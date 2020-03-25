@@ -4,61 +4,92 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- el ./ es una buena practica -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css">
-        <title>Welcome to London</title>
+        <title>Come to U.K.</title>
     </head>
     <body>
         <header>
-            <figure>
-                <h1>Come 2 U.K.</h1>
-            </figure>
-
-            <nav>
-                <!-- para todas las opciones de navegacion -->
-                <ul>
-                    <li>
-                        <a href="./tours.html">Tours</a>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" href="#">Come to U.K.</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    
-                    <li>
-                        <a href="">Best Places</a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Tours</a>
                     </li>
-                    
-                    <li>
-                       <a href="">Hosting</a> 
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Best Places
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Historic Places</a>
+                        <a class="dropdown-item" href="#">Ye Old City</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Ye Old Irish Pubs</a>
+                        <a class="dropdown-item" href="#">Music Festivals</a>
+                      </div>
                     </li>
-                </ul>
-            </nav>
-
-            <section>
-                <input type="text">
-                <button>Buscar</button>
-            </section>
-
+                    <li class="nav-item">
+                      <a class="nav-link disabled" href="#">Disclaimer</a>
+                    </li>
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
         </header>
        
         
         <section class="mainBlock" id="galeriaUno">
-            <figure>
-                <img src="./img/stonehenge.jpg" alt="Stonhenge">
-                <figcaption>Places</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="./img/london.jpg" alt="London">
-                <figcaption>Cities</figcaption>
-            </figure>
-            
-            <figure>
-                <img src="./img/irish_pub.jpg" alt="Irish Pub">
-                <figcaption>Pubs</figcaption>
-            </figure>
-        
-            <figure>
-                <img src="./img/glastonbury.jpg" alt="Glastonbury">
-                <figcaption>Festivals</figcaption>
-            </figure>
+            <div class="row">
+                <div class="column col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="inner">
+                        <img src="./img/stonehenge.jpg" alt="Buenos perritos">
+                        <figcaption>Historic Places</figcaption>
+                    </div>
+                </div>
+                
+                <div class="column col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="inner">
+                        <img src="./img/london.jpg" alt="Buenos perritos bis">
+                        <figcaption>Ye Old City</figcaption>
+                    </div>
+                </div>
+
+                <div class="column col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="inner">
+                        <img src="./img/irish_pub.jpg" alt="Re buenos perritos bis">
+                        <figcaption>Ye Old Irish Pubs</figcaption>
+                    </div>
+                </div>
+
+                <div class="column col-12 col-md-6 col-lg-4 col-xl-3">
+                    <div class="inner">
+                        <img src="./img/glastonbury.jpg" alt="Re buenos perritos bis">
+                        <figcaption>Music Festivals</figcaption>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <footer class="pb-4 pt-4">
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-12 col-lg">
+                  <a href="#" class="text-white">Copyright - PERRITOSCORP 2020</a>
+                </div>
+              </div>
+            </div>
+        </footer>
 
     </body>
 </html>
